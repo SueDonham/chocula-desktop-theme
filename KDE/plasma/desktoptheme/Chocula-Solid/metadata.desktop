@@ -1,0 +1,15 @@
+[Desktop Entry]
+Name=Chocula Solid
+Comment=A dark brown theme with accents from the Dracula color palette
+X-KDE-PluginInfo-Author=SueDonham
+X-KDE-PluginInfo-Email=susan.donham@pm.me
+X-KDE-PluginInfo-Name=Chocula-Solid
+X-KDE-PluginInfo-Version=1.0.0
+X-KDE-PluginInfo-Website=https://github.com/SueDonham/chocula-desktop-theme/tree/main/kde
+X-KDE-PluginInfo-Category=Plasma Theme
+X-KDE-PluginInfo-License=GPLv3
+X-KDE-PluginInfo-EnabledByDefault=true
+X-Plasma-API=5.0
+
+[AdaptiveTransparency]
+enabled=true

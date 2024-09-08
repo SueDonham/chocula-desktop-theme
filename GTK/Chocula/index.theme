@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Chocula
+Comment=A dark brown theme with bright accents
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Chocula
+MetacityTheme=Chocula
+IconTheme=Mint-Y
+ButtonLayout=menu:minimize,maximize,close

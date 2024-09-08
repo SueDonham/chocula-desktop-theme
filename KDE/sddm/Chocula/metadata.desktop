@@ -1,0 +1,16 @@
+[SddmGreeterTheme]
+Name=Chocula
+Description=Chocula sddm theme
+Author=SueDonham
+Copyright=(c) 2024, SueDonham
+License=GPL 3+
+Type=sddm-theme
+Version=0.1
+Website=https://github.com/SueDonham/chocula-desktop-theme/tree/main/kde/sddm
+Screenshot=preview.png
+MainScript=Main.qml
+ConfigFile=theme.conf
+TranslationsDirectory=translations
+Email=susan.donham@pm.me
+Theme-Id=Chocula
+Theme-API=2.0

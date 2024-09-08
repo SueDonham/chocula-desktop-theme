@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   id="svg17"
+   width="32"
+   height="32"
+   version="1.1"
+   sodipodi:docname="applications.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs9" />
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="26.125"
+     inkscape:cx="10.066986"
+     inkscape:cy="16"
+     inkscape:window-width="1920"
+     inkscape:window-height="1021"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg17" />
+  <g
+     id="applications-other">
+    <g
+       id="applications-other-3"
+       transform="translate(.27357 .15566)"
+       style="clip-rule:evenodd;fill-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.4142">
+      <path
+         id="rect817"
+         transform="translate(-22 -1.5e-5)"
+         d="m22 0v32h32v-32z"
+         style="fill-opacity:0;stroke-width:1.0021" />
+      <path
+         id="path20"
+         d="m4.12 2.5h8.96c0.61824 0 1.12 0.50176 1.12 1.12v8.96c0 0.61824-0.50176 1.12-1.12 1.12h-8.96c-0.61824 0-1.12-0.50176-1.12-1.12v-8.96c0-0.61824 0.50176-1.12 1.12-1.12zm15.68 0h8.96c0.61824 0 1.12 0.50176 1.12 1.12v8.96c0 0.61824-0.50176 1.12-1.12 1.12h-8.96c-0.61824 0-1.12-0.50176-1.12-1.12v-8.96c0-0.61824 0.50176-1.12 1.12-1.12zm0 15.68h8.96c0.61824 0 1.12 0.50176 1.12 1.12v8.96c0 0.61824-0.50176 1.12-1.12 1.12h-8.96c-0.61824 0-1.12-0.50176-1.12-1.12v-8.96c0-0.61824 0.50176-1.12 1.12-1.12zm-15.68 0h8.96c0.61824 0 1.12 0.50176 1.12 1.12v8.96c0 0.61824-0.50176 1.12-1.12 1.12h-8.96c-0.61824 0-1.12-0.50176-1.12-1.12v-8.96c0-0.61824 0.50176-1.12 1.12-1.12z"
+         stroke-miterlimit="3"
+         style="fill:none;isolation:isolate;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:3;stroke-width:1.12;stroke:#ffb86c;vector-effect:non-scaling-stroke" />
+    </g>
+  </g>
+</svg>

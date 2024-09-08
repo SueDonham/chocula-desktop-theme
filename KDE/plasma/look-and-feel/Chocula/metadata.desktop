@@ -1,0 +1,13 @@
+[Desktop Entry]
+Name=Chocula
+X-KDE-PluginInfo-Author=SueDonham
+X-KDE-PluginInfo-Category=Plasma Look And Feel
+X-KDE-PluginInfo-Email=susan.donham@pm.me
+X-KDE-PluginInfo-EnabledByDefault=true
+X-KDE-PluginInfo-License=GPL 3+
+X-KDE-PluginInfo-Name=Chocula
+X-KDE-PluginInfo-Version=0.1
+X-KDE-PluginInfo-Website=https://github.com/SueDonham/chocula-desktop-theme/tree/main/kde
+X-KDE-ServiceTypes=Plasma/LookAndFeel
+
+X-KPackage-Dependencies=kns://colorschemes.knsrc/api.kde-look.org/2198929,kns://plasma-themes.knsrc/api.kde-look.org/2198931,kns://plasma-themes.knsrc/api.kde-look.org/2198932,kns://aurorae.knsrc/api.kde-look.org/2198935,kns://sddmtheme.knsrc/api.kde-look.org/2198937,kns://wallpaper.knsrc/api.kde-look.org/2198940,kns://xcursor.knsrc/api.kde-look.org/1831077,kns://icons.knsrc/api.kde-look.org/1661983
