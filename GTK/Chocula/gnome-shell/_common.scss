@@ -21,7 +21,7 @@ stage {
   @include button(normal);
   &:focus { @include button(focus); }
   &:insensitive { @include button(insensitive); }
-  &:active { @include button(active); }
+  &:active, &:checked { @include button(active); }
   &:hover {
     @include button(hover);
   }
@@ -149,10 +149,15 @@ $slider_size: 16px;
 .toggle-switch {
   width: 65px;
   height: 22px;
+  background-color: transparent !important;
   background-size: contain;
   //Gnome 3.32//
   background-image: url("assets/toggle-off.svg");
   &:checked { background-image: url("assets/toggle-on.svg"); }
+  .handle {
+    background: none !important;
+    box-shadow: none !important;
+  }
 }
 
   @each $v in us, intl {
@@ -180,6 +185,7 @@ $slider_size: 16px;
   color: $osd_fg_color;
   background-color: darken($osd_bg_color,5%);
   box-shadow: $depth6;
+  padding: 0 !important;
 
   .modal-dialog-content-box { 
     margin: 32px 40px;
@@ -1330,7 +1336,7 @@ $slider_size: 16px;
 
 //close buttons
 
-.window-close {
+.window-close, %window-close-button {
   background-color: $main_dark;
   color: lighten($fg_color, 4%);
   border-radius: 30px * 0.5 + 3px * 2;
@@ -2350,4 +2356,42 @@ $slider_size: 16px;
   }
 
 .quick-slider .icon-button:hover { @include button(hover); }
-  
+
+
+// Screenshot UI
+
+.screenshot-ui-panel {
+  @extend %osd-panel;
+}
+
+.screenshot-ui-close-button {
+  @extend %window-close-button;
+}
+
+.screenshot-ui-type-button, .screenshot-ui-show-pointer-button {
+  @extend %button;
+  text-shadow: none;
+}
+
+.screenshot-ui-window-selector {
+  background-color: $bg_color;
+}
+
+.screenshot-ui-window-selector-window {
+  &:hover {
+    .screenshot-ui-window-selector-window-border {
+      border-color: darken($selected_bg_color, 15%);
+    }
+  }
+  &:checked {
+    .screenshot-ui-window-selector-window-border {
+      border-color: $selected_bg_color;
+      background-color: transparentize($selected_bg_color, 0.8);
+    }
+
+    .screenshot-ui-window-selector-check {
+      color: $bg_color;
+      background-color: $selected_bg_color;
+    }
+  }
+}

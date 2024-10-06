@@ -8,34 +8,34 @@ stage {
 
 /* WIDGETS */
 /* Buttons */
-.button, .icon-button, .app-folder-dialog .edit-folder-button, .quick-settings-system-item .icon-button {
+.button, .icon-button, .app-folder-dialog .edit-folder-button, .quick-settings-system-item .icon-button, .screenshot-ui-type-button, .screenshot-ui-show-pointer-button {
   color: #cdcac6;
   background-color: #36332f;
   box-shadow: none;
   border: 1px solid #211e1c;
   text-shadow: 0 1px black;
   icon-shadow: 0 1px black; }
-  .button:focus, .icon-button:focus, .app-folder-dialog .edit-folder-button:focus, .quick-settings-system-item .icon-button:focus {
+  .button:focus, .icon-button:focus, .app-folder-dialog .edit-folder-button:focus, .quick-settings-system-item .icon-button:focus, .screenshot-ui-type-button:focus, .screenshot-ui-show-pointer-button:focus {
     background-color: #46413c;
     color: #f5f4f4;
     text-shadow: 0 1px black;
     icon-shadow: 0 1px black;
     box-shadow: none !important;
-    border: 1px solid #211e1c; }
-  .button:insensitive, .icon-button:insensitive, .app-folder-dialog .edit-folder-button:insensitive, .quick-settings-system-item .icon-button:insensitive {
+    border: 1px solid #1b1c24; }
+  .button:insensitive, .icon-button:insensitive, .app-folder-dialog .edit-folder-button:insensitive, .quick-settings-system-item .icon-button:insensitive, .screenshot-ui-type-button:insensitive, .screenshot-ui-show-pointer-button:insensitive {
     color: #877e75;
     background-color: rgba(70, 65, 60, 0.66);
     box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
     border: none;
     text-shadow: none;
     icon-shadow: none; }
-  .button:active, .icon-button:active, .app-folder-dialog .edit-folder-button:active, .quick-settings-system-item .icon-button:active {
-    color: #bd93f9;
-    background-color: rgba(50, 46, 43, 0.95);
+  .button:active, .button:checked, .icon-button:active, .icon-button:checked, .app-folder-dialog .edit-folder-button:active, .quick-settings-system-item .icon-button:active, .screenshot-ui-type-button:active, .screenshot-ui-show-pointer-button:active, .app-folder-dialog .edit-folder-button:checked, .quick-settings-system-item .icon-button:checked, .screenshot-ui-type-button:checked, .screenshot-ui-show-pointer-button:checked {
+    color: #f5f4f4;
+    background-color: rgba(50, 46, 43, 0.5);
     border: 1px solid #211e1c;
     text-shadow: none;
     icon-shadow: none; }
-  .button:hover, .icon-button:hover, .app-folder-dialog .edit-folder-button:hover, .quick-settings-system-item .icon-button:hover {
+  .button:hover, .icon-button:hover, .app-folder-dialog .edit-folder-button:hover, .quick-settings-system-item .icon-button:hover, .screenshot-ui-type-button:hover, .screenshot-ui-show-pointer-button:hover {
     background-color: #46413c;
     color: #f5f4f4;
     border: 1px solid #211e1c;
@@ -62,8 +62,8 @@ stage {
     text-shadow: none;
     icon-shadow: none; }
   .modal-dialog-linked-button:active {
-    color: #bd93f9;
-    background-color: rgba(50, 46, 43, 0.95);
+    color: #f5f4f4;
+    background-color: rgba(50, 46, 43, 0.5);
     border: 1px solid #211e1c;
     text-shadow: none;
     icon-shadow: none; }
@@ -176,10 +176,14 @@ StScrollBar {
 .toggle-switch {
   width: 65px;
   height: 22px;
+  background-color: transparent !important;
   background-size: contain;
   background-image: url("assets/toggle-off.svg"); }
   .toggle-switch:checked {
     background-image: url("assets/toggle-on.svg"); }
+  .toggle-switch .handle {
+    background: none !important;
+    box-shadow: none !important; }
 
 .toggle-switch-us {
   background-image: url("assets/toggle-off.svg"); }
@@ -212,7 +216,8 @@ StScrollBar {
   border-radius: 10px;
   color: #cdcac6;
   background-color: rgba(35, 32, 30, 0.95);
-  box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.2); }
+  box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.2);
+  padding: 0 !important; }
   .modal-dialog .modal-dialog-content-box {
     margin: 32px 40px;
     spacing: 32px;
@@ -690,7 +695,7 @@ StScrollBar {
 
 .osd-window,
 .resize-popup,
-.switcher-list, .workspace-switcher-container {
+.switcher-list, .workspace-switcher-container, .screenshot-ui-panel {
   color: #cdcac6;
   background-color: rgba(50, 46, 43, 0.95);
   border: 1px solid #211e1c;
@@ -1112,7 +1117,7 @@ StScrollBar {
 .popup-menu-icon {
   icon-size: 1.09em; }
 
-.window-close {
+.window-close, .screenshot-ui-close-button {
   background-color: #292624;
   color: #d7d4d1;
   border-radius: 21px;
@@ -1122,12 +1127,12 @@ StScrollBar {
   width: 28px;
   box-shadow: -1px 1px 5px 0px rgba(0, 0, 0, 0.5);
   transition-duration: 300ms; }
-  .window-close StIcon {
+  .window-close StIcon, .screenshot-ui-close-button StIcon {
     icon-size: 23px; }
-  .window-close:hover {
+  .window-close:hover, .screenshot-ui-close-button:hover {
     border-color: rgba(137, 128, 119, 0.5); }
-  .window-close:active {
-    color: #bd93f9;
+  .window-close:active, .screenshot-ui-close-button:active {
+    color: #898077;
     background-color: rgba(35, 32, 30, 0.95); }
 
 .window-close {
@@ -1325,8 +1330,8 @@ StScrollBar {
 .app-view-control {
   padding: 4px 32px; }
   .app-view-control:checked {
-    color: #bd93f9;
-    background-color: rgba(50, 46, 43, 0.95);
+    color: #f5f4f4;
+    background-color: rgba(50, 46, 43, 0.5);
     border: 1px solid #211e1c;
     text-shadow: none;
     icon-shadow: none; }
@@ -1382,7 +1387,7 @@ StScrollBar {
 .app-well-app-running-dot, .app-grid-running-dot {
   width: 10px;
   height: 3px;
-  background-color: #bd93f9;
+  background-color: #898077;
   border-radius: 5px !important;
   margin-bottom: 0px; }
 
@@ -1695,8 +1700,8 @@ StScrollBar {
     text-shadow: 0 1px black;
     icon-shadow: 0 1px black; }
   .keyboard-key:active {
-    color: #bd93f9;
-    background-color: rgba(50, 46, 43, 0.95);
+    color: #f5f4f4;
+    background-color: rgba(50, 46, 43, 0.5);
     border: 1px solid #211e1c;
     text-shadow: none;
     icon-shadow: none; }
@@ -1786,8 +1791,8 @@ StScrollBar {
         text-shadow: 0 1px black;
         icon-shadow: 0 1px black; }
       .login-dialog .modal-dialog-button:default:active {
-        color: #898077;
-        background-color: rgba(137, 128, 119, 0.5);
+        color: #f5f4f4;
+        background-color: rgba(50, 46, 43, 0.5);
         border: 1px solid #211e1c;
         text-shadow: none;
         icon-shadow: none; }
@@ -2049,14 +2054,14 @@ StScrollBar {
   /* Move padding into the box; this is to allow menu arrows
      to extend to the border */ }
   .quick-toggle:checked {
-    color: #898077;
-    background-color: rgba(137, 128, 119, 0.15);
+    color: #f5f4f4;
+    background-color: rgba(50, 46, 43, 0.15);
     border: 1px solid #211e1c;
     text-shadow: none;
     icon-shadow: none; }
     .quick-toggle:checked:hover {
-      color: #898077;
-      background-color: rgba(137, 128, 119, 0.15);
+      color: #f5f4f4;
+      background-color: rgba(50, 46, 43, 0.15);
       border: 1px solid #211e1c;
       text-shadow: none;
       icon-shadow: none; }
@@ -2098,14 +2103,14 @@ StScrollBar {
   border-width: 0;
   color: #cdcac6; }
   .quick-menu-toggle .quick-toggle-arrow:checked {
-    color: #898077;
-    background-color: rgba(137, 128, 119, 0.25);
+    color: #f5f4f4;
+    background-color: rgba(50, 46, 43, 0.25);
     border: 1px solid #211e1c;
     text-shadow: none;
     icon-shadow: none; }
     .quick-menu-toggle .quick-toggle-arrow:checked:hover {
-      color: #898077;
-      background-color: rgba(137, 128, 119, 0.25);
+      color: #f5f4f4;
+      background-color: rgba(50, 46, 43, 0.25);
       border: 1px solid #211e1c;
       text-shadow: none;
       icon-shadow: none; }
@@ -2150,6 +2155,21 @@ StScrollBar {
   border: 1px solid #211e1c;
   text-shadow: 0 1px black;
   icon-shadow: 0 1px black; }
+
+.screenshot-ui-type-button, .screenshot-ui-show-pointer-button {
+  text-shadow: none; }
+
+.screenshot-ui-window-selector {
+  background-color: #322e2b; }
+
+.screenshot-ui-window-selector-window:hover .screenshot-ui-window-selector-window-border {
+  border-color: rgba(137, 128, 119, 0.5); }
+.screenshot-ui-window-selector-window:checked .screenshot-ui-window-selector-window-border {
+  border-color: rgba(137, 128, 119, 0.35);
+  background-color: rgba(137, 128, 119, 0); }
+.screenshot-ui-window-selector-window:checked .screenshot-ui-window-selector-check {
+  color: #322e2b;
+  background-color: rgba(137, 128, 119, 0.5); }
 
 .openweather-current-summarybox,
 .openweather-forecast-icon,
