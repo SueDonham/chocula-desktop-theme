@@ -1,49 +1,57 @@
+@use "sass:color";
+@use "../globals" as *;
+@use "buttons";
+
 /*********
  * Links *
  *********/
 *:link {
-  color: $link_color;
-
-  &:visited {
-    color: $link_visited_color;
-
-    *:selected & { color: mix($selected_fg_color, $selected_bg_color, 60%); }
-  }
-
-  &:hover {
-    color: lighten($link_color,10%);
-
-    *:selected & { color: mix($selected_fg_color, $selected_bg_color, 90%); }
-  }
-
-  &:active {
-    color: $link_color;
-
-    *:selected & { color: mix($selected_fg_color, $selected_bg_color, 80%); }
-  }
-
-  &:backdrop { &:backdrop:hover, &:backdrop:hover:selected, & { color: $selected_bg_color; }}
-
-  @at-root %link_selected,
-  &:selected,
-  *:selected & { color: mix($selected_fg_color, $selected_bg_color, 80%); }
+	color: $link_color;
+	@at-root button:visited,
+	&:visited {
+		color: $link_visited_color;
+		*:selected & { color: color.mix($selected_fg_color, $selected_bg_color, 60%); }
+	}
+	@at-root button:hover:link,
+	button:hover:visited,
+	&:hover {
+		color: color.adjust($link_color, $lightness: 10%);
+		*:selected & { color: color.mix($selected_fg_color, $selected_bg_color, 90%); }
+	}
+	@at-root button:active:link,
+	button:active:visited,
+	&:active {
+		color: $link_color;
+		*:selected & { color: color.mix($selected_fg_color, $selected_bg_color, 80%); }
+	}
+	&:backdrop, %link-backdrop {
+		@at-root button:backdrop:link,
+		button:backdrop:visited,
+		&:hover, &:hover:selected, & { color: $selected_bg_color; 	}
+	}
+	@at-root %link_selected,
+	button:selected:link,
+	button:selected:visited,
+	&:selected,
+	*:selected & {
+		color: color.mix($selected_fg_color, $selected_bg_color, 80%);
+	}
 }
 
-button:link,
-button:visited {
-  @extend %undecorated_button;
-
-  @extend *:link;
-
-  text-shadow: none;
-
-  &:hover,
-  &:active,
-  &:checked {
-    @extend %undecorated_button;
-
-    text-shadow: none;
-  }
-
-  > label { text-decoration-line: underline; }
+button {
+	&:link {
+		color: $link_color;
+		*:selected & { @extend %link_selected; }
+	}
+	&:visited, &:link {
+		&:hover, &:active, &:checked, & {
+			@extend %undecorated_button;
+		}
+		> label { text-decoration-line: underline; }
+	}
+	&:backdrop:hover {
+		&:selected, & {
+			&:link, &:visited {color: $selected_bg_color; }
+		}
+	}
 }

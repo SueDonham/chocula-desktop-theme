@@ -1,36 +1,34 @@
+@use "sass:color";
+@use "../globals" as *;
+
 /*********
  * Geary *
  *********/
-
 .geary-titlebar-left,
 .geary-titlebar-right {
-
-  .separator {
-    opacity: 0;
-  }
+	.separator {
+		opacity: 0;
+	}
 }
 
 ConversationListView {
-
-  .view {
-    &:active,
-    &:selected {
-      background-color: $selected_bg_color;
-      color: $selected_fg_color;
-
-      &:backdrop {
-        background-color: $backdrop_selected_bg_color;
-        color: $backdrop_selected_fg_color;
-      }
-    }
-
-    .cell {
-      border: solid transparentize(black, 0.8);
-      border-width: 0 0 1px 0;
-      &:selected {
-        color: $selected_fg_color;
-        border: 0px solid darken($selected_bg_color, 10% );
-      }
-    }
-  }
+	.view, iconview {
+		&:active,
+		&:selected {
+			background-color: $selected_bg_color;
+			color: $selected_fg_color;
+			&:backdrop {
+				background-color: $backdrop_selected_bg_color;
+				color: $backdrop_selected_fg_color;
+			}
+		}
+		.cell {
+			border: solid color.adjust(black, $alpha: -0.8);
+			border-width: 0 0 1px 0;
+			&:selected {
+				color: $selected_fg_color;
+				border: 0 solid color.adjust($selected_bg_color, $lightness: -10%);
+			}
+		}
+	}
 }

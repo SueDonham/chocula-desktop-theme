@@ -1,20 +1,20 @@
 /**********************
- * DE-Specific Styles *
+ * DE-Specific App Styles *
  **********************/
 
-@import 'apps/budgie';
-@import 'apps/gnome';
-@import 'apps/pantheon';
-@import 'apps/xfce';
-@import 'apps/unity';
-@import 'apps/mate';
+@use 'apps/budgie';
+@use 'apps/gnome';
+@use 'apps/pantheon';
+@use 'apps/xfce';
+@use 'apps/unity';
+@use 'apps/mate';
 
 /***********************
  * App-Specific Styles *
  ***********************/
 
-@import 'apps/geary';
-@import 'apps/lightdm';
-@import 'apps/thunar';
-@import 'apps/nemo';
-@import 'apps/caja';
+@use 'apps/geary';
+@use 'apps/lightdm';
+@use 'apps/thunar';
+@use 'apps/nemo';
+@use 'apps/caja';

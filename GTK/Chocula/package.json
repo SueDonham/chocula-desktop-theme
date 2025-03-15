@@ -1,0 +1,20 @@
+{
+  "name": "Chocula",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Sue Donham <susan.donham@pm.me> ",
+  "license": "GPLv3",
+    "devDependencies": {
+    "color-convert": "^2.0.1",
+    "gulp": "^5.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-replace": "^1.1.4",
+    "gulp-sass": "^6.0.1",
+    "sass": "^1.85.1"
+  }
+}

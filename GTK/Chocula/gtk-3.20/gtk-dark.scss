@@ -1,11 +1,5 @@
-
-
-$variant: 'dark';
-
-@import 'colors';
-@import 'elementary-colors';
-@import 'colors-public';
-@import 'drawing';
-@import 'common';
-@import 'widgets';
-@import 'apps';
+@use 'colors-public';
+@use 'elementary-colors';
+@use 'globals';
+@use 'widgets';
+@use 'apps';

@@ -14,19 +14,19 @@ style "terminal_menubar"
 
 style "terminal_notebook" = "dark"
 {
-	fg[ACTIVE] = mix (0.8, "#DADBDB", "#DADBDB")
+	fg[ACTIVE] = mix (0.8, "#dedcd9", "#dedcd9")
 
-	engine "murrine" { 
+	engine "murrine" {
 	}
 }
 
 style "terminal_scrollbar" = "scrollbar"
 {
-	bg[NORMAL]        = "#0e141f"
-	bg[PRELIGHT]      = shade(1.08, "#0e141f")
-	bg[ACTIVE]        = shade(0.94, "#0e141f")
+	bg[NORMAL]        = "#1a1816"
+	bg[PRELIGHT]      = shade(1.08, "#1a1816")
+	bg[ACTIVE]        = shade(0.94, "#1a1816")
 	bg[SELECTED]      = shade(1.0, @selected_bg_color)
-	bg[INSENSITIVE]   = "#0e141f"
+	bg[INSENSITIVE]   = "#1a1816"
 
 	engine "murrine" {
 	}
@@ -34,8 +34,8 @@ style "terminal_scrollbar" = "scrollbar"
 
 style "terminal_screen"
 {
-	text[NORMAL] = "#DADBDB"
-	base[NORMAL] = "#273445"
+	text[NORMAL] = "#dedcd9"
+	base[NORMAL] = "#383531"
 
 	TerminalScreen::background-darkness = 0.95
 }
