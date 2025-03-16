@@ -5908,7 +5908,7 @@ placessidebar row:drop(active):not(:disabled):selected label {
 .bottom-bar {
   background-color: #322e2b
 }
-.bottom-bar button {
+.bottom-bar button.toggle:not(.image-button) {
   border-color: transparent;
   background-color: transparent;
   background-image: none;
@@ -5916,8 +5916,8 @@ placessidebar row:drop(active):not(:disabled):selected label {
   text-shadow: none;
   -gtk-icon-shadow: none
 }
-.bottom-bar button .view,
-.bottom-bar button iconview {
+.bottom-bar button.toggle:not(.image-button) .view,
+.bottom-bar button.toggle:not(.image-button) iconview {
   background-color: transparent
 }
 /*****************
