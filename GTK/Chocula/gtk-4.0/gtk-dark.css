@@ -3723,6 +3723,9 @@ window.csd > .titlebar:not(headerbar) {
 .sidebar-pane .top-bar headerbar {
   background-color: #272422
 }
+.raised.top-bar {
+  background-color: #272422
+}
 /**************
  * GtkInfoBar *
  **************/
