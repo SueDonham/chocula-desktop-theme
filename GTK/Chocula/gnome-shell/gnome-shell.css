@@ -11,6 +11,7 @@ stage {
 .app-folder-dialog .edit-folder-button,
 .button,
 .icon-button,
+.modal-dialog .modal-dialog-button-box .modal-dialog-button,
 .quick-settings-system-item .icon-button,
 .screenshot-ui-show-pointer-button,
 .screenshot-ui-type-button {
@@ -24,6 +25,7 @@ stage {
 .app-folder-dialog .edit-folder-button:focus,
 .button:focus,
 .icon-button:focus,
+.modal-dialog .modal-dialog-button-box .modal-dialog-button:focus,
 .screenshot-ui-show-pointer-button:focus,
 .screenshot-ui-type-button:focus {
   background-color: #423d39;
@@ -36,6 +38,7 @@ stage {
 .app-folder-dialog .edit-folder-button:insensitive,
 .button:insensitive,
 .icon-button:insensitive,
+.modal-dialog .modal-dialog-button-box .modal-dialog-button:insensitive,
 .screenshot-ui-show-pointer-button:insensitive,
 .screenshot-ui-type-button:insensitive {
   color: #807c79;
@@ -51,6 +54,8 @@ stage {
 .button:checked,
 .icon-button:active,
 .icon-button:checked,
+.modal-dialog .modal-dialog-button-box .modal-dialog-button:active,
+.modal-dialog .modal-dialog-button-box .modal-dialog-button:checked,
 .screenshot-ui-show-pointer-button:active,
 .screenshot-ui-show-pointer-button:checked,
 .screenshot-ui-type-button:active,
@@ -64,6 +69,7 @@ stage {
 .app-folder-dialog .edit-folder-button:hover,
 .button:hover,
 .icon-button:hover,
+.modal-dialog .modal-dialog-button-box .modal-dialog-button:hover,
 .screenshot-ui-show-pointer-button:hover,
 .screenshot-ui-type-button:hover {
   background-color: #423d39;
@@ -282,9 +288,15 @@ StScrollBar StButton#vhandle:active {
   padding: 0!important
 }
 .modal-dialog .modal-dialog-content-box {
-  margin: 32px 40px;
+  margin: 10px 30px;
   spacing: 32px;
   max-width: 28em
+}
+.modal-dialog .modal-dialog-button-box {
+  padding: 0 10px 10px 10px
+}
+.modal-dialog .modal-dialog-button-box .modal-dialog-button {
+  border-radius: 10px
 }
 .modal-dialog .run-dialog-entry {
   width: 20em;
@@ -335,10 +347,13 @@ StScrollBar StButton#vhandle:active {
 .end-session-dialog {
   border: none
 }
+.end-session-dialog .modal-dialog-button:last-child,
 .end-session-dialog .modal-dialog-linked-button:last-child {
   background-color: #f55;
   color: #fff
 }
+.end-session-dialog .modal-dialog-button:last-child:focus,
+.end-session-dialog .modal-dialog-button:last-child:hover,
 .end-session-dialog .modal-dialog-linked-button:last-child:focus,
 .end-session-dialog .modal-dialog-linked-button:last-child:hover {
   background: #ff2c2c;
@@ -1837,6 +1852,9 @@ StScrollBar StButton#vhandle:active {
 .notification-banner .notification-buttonfocus {
   background-color: rgba(189,147,249,.5);
   color: #f5f4f4
+}
+.notification-buttons-bin .notification-button {
+  border-radius: 10px!important
 }
 .summary-source-counter {
   font-size: 10pt;
