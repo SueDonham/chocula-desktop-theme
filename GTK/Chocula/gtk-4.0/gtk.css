@@ -3844,8 +3844,9 @@ infobar {
   background-color: transparent
 }
 banner revealer widget {
-  background: rgba(80,250,122,.85);
-  padding: 5px
+  background: rgba(80,250,122,.75);
+  padding: 5px;
+  color: #f5f4f4
 }
 levelbar.horizontal trough > block {
   min-height: 5px;
@@ -3960,6 +3961,14 @@ row.activatable:selected:backdrop {
 row.activatable .view {
   background-color: transparent
 }
+row.activatable.button {
+  font-weight: 400;
+  color: #f5f4f4;
+  outline-color: rgba(245,244,244,.3);
+  background-color: #322e2b;
+  text-shadow: none;
+  box-shadow: inset 0 1px 0 0 rgba(255,255,255,.1),inset 0 -1px 0 0 rgba(0,0,0,.1)
+}
 columnview > listview > row {
   padding: 0
 }
@@ -4030,6 +4039,10 @@ columnview.complex.data-table > listview > row > cell {
 columnview.complex.data-table > listview > row > cell > * {
   padding-top: 2px;
   padding-bottom: 2px
+}
+.boxed-list-separate,
+.boxed-list-separate:backdrop {
+  background-color: transparent
 }
 /*********
  * Menus *
