@@ -3904,9 +3904,6 @@ window:not(.tiled):not(.maximized) headerbar:last-child,
 window:not(.tiled):not(.maximized) headerbar:last-child:backdrop {
   border-top-right-radius: 4px
 }
-window {
-  border-radius: 6px
-}
 window.csd > .titlebar:not(headerbar) {
   padding: 0;
   background-color: transparent;

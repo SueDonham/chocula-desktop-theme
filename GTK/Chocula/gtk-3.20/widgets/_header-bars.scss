@@ -251,8 +251,6 @@ headerbar {
 	}
 }
 
-window { border-radius: 6px; }
-
 .titlebar:not(headerbar) {
 	window.csd > & {
 		// in csd we assume every titlebar is a headerbar so reset anything, this is needed for split toolbars cases
