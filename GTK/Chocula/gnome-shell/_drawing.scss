@@ -135,8 +135,6 @@ $depth6: 0 2px 4px 2px color.adjust(black, $alpha: -0.8);
 		background-color: color.adjust($base_color, $lightness: 2%);
 		box-shadow: none;
 		border: 1px solid $borders_color;
-		text-shadow: 0 1px black;
-		icon-shadow: 0 1px black;
 	}
 
 	@if $t==focus {
@@ -148,8 +146,6 @@ $depth6: 0 2px 4px 2px color.adjust(black, $alpha: -0.8);
 
 		background-color: color.adjust($base_color, $lightness: 6%);
 		color: $selected_fg_color;
-		text-shadow: 0 1px black;
-		icon-shadow: 0 1px black;
 		box-shadow: none !important;
 		border: 1px solid $borders_color;
 	}
@@ -164,9 +160,6 @@ $depth6: 0 2px 4px 2px color.adjust(black, $alpha: -0.8);
 		background-color: color.adjust($base_color, $lightness: 6%);
 		color: $selected_fg_color;
 		border: 1px solid $borders_color;
-		text-shadow: 0 1px black;
-		icon-shadow: 0 1px black;
-
 	} @else if $t==active {
 		//
 		// active osd button

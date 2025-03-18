@@ -18,9 +18,7 @@ stage {
   color: #cdcac6;
   background-color: #373330;
   box-shadow: none;
-  border: 1px solid #221f1d;
-  text-shadow: 0 1px #000;
-  icon-shadow: 0 1px #000
+  border: 1px solid #221f1d
 }
 .app-folder-dialog .edit-folder-button:focus,
 .button:focus,
@@ -30,8 +28,6 @@ stage {
 .screenshot-ui-type-button:focus {
   background-color: #423d39;
   color: #f5f4f4;
-  text-shadow: 0 1px #000;
-  icon-shadow: 0 1px #000;
   box-shadow: none!important;
   border: 1px solid #221f1d
 }
@@ -74,9 +70,7 @@ stage {
 .screenshot-ui-type-button:hover {
   background-color: #423d39;
   color: #f5f4f4;
-  border: 1px solid #221f1d;
-  text-shadow: 0 1px #000;
-  icon-shadow: 0 1px #000
+  border: 1px solid #221f1d
 }
 .button {
   border-radius: 5px;
@@ -87,9 +81,7 @@ stage {
   color: #cdcac6;
   background-color: #373330;
   box-shadow: none;
-  border: 1px solid #221f1d;
-  text-shadow: 0 1px #000;
-  icon-shadow: 0 1px #000
+  border: 1px solid #221f1d
 }
 .modal-dialog-linked-button:insensitive {
   color: #807c79;
@@ -109,25 +101,19 @@ stage {
 .modal-dialog-linked-button:focus {
   background-color: #423d39;
   color: #f5f4f4;
-  text-shadow: 0 1px #000;
-  icon-shadow: 0 1px #000;
   box-shadow: none!important;
   border: 1px solid #221f1d
 }
 .modal-dialog-linked-button:focus:hover {
   background-color: #423d39;
   color: #f5f4f4;
-  text-shadow: 0 1px #000;
-  icon-shadow: 0 1px #000;
   box-shadow: none!important;
   border: 1px solid #221f1d
 }
 .modal-dialog-linked-button:hover {
   background-color: #423d39;
   color: #f5f4f4;
-  border: 1px solid #221f1d;
-  text-shadow: 0 1px #000;
-  icon-shadow: 0 1px #000
+  border: 1px solid #221f1d
 }
 .modal-dialog-linked-button:first-child {
   border-radius: 0 0 0 10px
@@ -1972,8 +1958,6 @@ StScrollBar StButton#vhandle:active {
   background-color: #373330;
   box-shadow: none;
   border: 1px solid #221f1d;
-  text-shadow: 0 1px #000;
-  icon-shadow: 0 1px #000;
   background-color: #322e2b;
   min-height: 2em;
   min-width: 2em;
@@ -1984,8 +1968,6 @@ StScrollBar StButton#vhandle:active {
 .keyboard-key:focus {
   background-color: #423d39;
   color: #f5f4f4;
-  text-shadow: 0 1px #000;
-  icon-shadow: 0 1px #000;
   box-shadow: none!important;
   border: 1px solid #221f1d
 }
@@ -1993,9 +1975,7 @@ StScrollBar StButton#vhandle:active {
 .keyboard-key:hover {
   background-color: #423d39;
   color: #f5f4f4;
-  border: 1px solid #221f1d;
-  text-shadow: 0 1px #000;
-  icon-shadow: 0 1px #000
+  border: 1px solid #221f1d
 }
 .keyboard-key:active {
   color: #f5f4f4;
@@ -2088,17 +2068,13 @@ StScrollBar StButton#vhandle:active {
   color: #cdcac6;
   background-color: #373330;
   box-shadow: none;
-  border: 1px solid #221f1d;
-  text-shadow: 0 1px #000;
-  icon-shadow: 0 1px #000
+  border: 1px solid #221f1d
 }
 .login-dialog .modal-dialog-button:default:focus,
 .login-dialog .modal-dialog-button:default:hover {
   background-color: #423d39;
   color: #f5f4f4;
-  border: 1px solid #221f1d;
-  text-shadow: 0 1px #000;
-  icon-shadow: 0 1px #000
+  border: 1px solid #221f1d
 }
 .login-dialog .modal-dialog-button:default:active {
   color: #f5f4f4;
@@ -2529,8 +2505,6 @@ StScrollBar StButton#vhandle:active {
 .quick-settings-system-item .icon-button:focus {
   background-color: #423d39;
   color: #f5f4f4;
-  text-shadow: 0 1px #000;
-  icon-shadow: 0 1px #000;
   box-shadow: none!important;
   border: 1px solid #221f1d
 }
@@ -2553,16 +2527,12 @@ StScrollBar StButton#vhandle:active {
 .quick-settings-system-item .icon-button:hover {
   background-color: #423d39;
   color: #f5f4f4;
-  border: 1px solid #221f1d;
-  text-shadow: 0 1px #000;
-  icon-shadow: 0 1px #000
+  border: 1px solid #221f1d
 }
 .quick-slider .icon-button:hover {
   background-color: #423d39;
   color: #f5f4f4;
-  border: 1px solid #221f1d;
-  text-shadow: 0 1px #000;
-  icon-shadow: 0 1px #000
+  border: 1px solid #221f1d
 }
 .screenshot-ui-show-pointer-button,
 .screenshot-ui-type-button {
